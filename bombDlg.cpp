@@ -122,6 +122,8 @@ CBombDlg::CBombDlg(CWnd* pParent /*=NULL*/)
 	, m_VistaYoffs(0)
 	, m_VistaXoffs(0)
 	, m_en_krona_ospelad(FALSE)
+	, m_maxnomodds(_T(""))
+	, m_minodds(0)
 {
 	//{{AFX_DATA_INIT(CBombDlg)
 	m_m1_minmal_hemma = 0;
@@ -262,6 +264,8 @@ void CBombDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_EDIT61, m_VistaYoffs);
 	DDX_Text(pDX, IDC_EDIT62, m_VistaXoffs);
 	DDX_Check(pDX, IDC_CHECK5, m_en_krona_ospelad);
+	DDX_Text(pDX, IDC_EDIT63, m_maxnomodds);
+	DDX_Text(pDX, IDC_EDIT64, m_minodds);
 }
 
 BEGIN_MESSAGE_MAP(CBombDlg, CDialog)
