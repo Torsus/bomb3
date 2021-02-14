@@ -122,7 +122,7 @@ CBombDlg::CBombDlg(CWnd* pParent /*=NULL*/)
 	, m_VistaYoffs(0)
 	, m_VistaXoffs(0)
 	, m_en_krona_ospelad(FALSE)
-	, m_maxnomodds(_T(""))
+	, m_maxnomodds(0)
 	, m_minodds(0)
 {
 	//{{AFX_DATA_INIT(CBombDlg)
@@ -2638,6 +2638,8 @@ void CBombDlg::OnButton5()
 	Odds->mb4 = m_m4_maxmal_borta;
 	Odds->m_matchid = m_MatchIDNr;
 	Odds->m_omsattning = m_omsattning;
+	Odds->m_maxnomodds = m_maxnomodds;
+	Odds->m_minodds = m_minodds;
 	Odds->m_en_krona_ospelad = m_en_krona_ospelad;
 	Odds->MissadeSidor = 0;
 	ShowWindow(SW_SHOWMINIMIZED);

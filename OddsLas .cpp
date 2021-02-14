@@ -1453,7 +1453,15 @@ void scanna_oddsen_sverige(char responseText2[])
 			int dummy;
 			dummy = 1;
 			odds2 = odds;
-			if (odds >(Odds->m_omsattning*0.35) && Odds->m_en_krona_ospelad) {
+			int hjalpodds;
+			if (Odds->KB[H1][B1][H2][B2][H3][B3][0][0] != NULL) {
+				hjalpodds = Odds->KB[H1][B1][H2][B2][H3][B3][0][0]->NOdds;
+			}
+			else {
+				hjalpodds = Odds->m_maxnomodds;
+			}
+		//	if (odds >(Odds->m_omsattning*0.35) && Odds->m_en_krona_ospelad) {
+			if (odds >(Odds->m_minodds) && Odds->m_en_krona_ospelad && hjalpodds < Odds->m_maxnomodds) {
 				
 				odds = 0;
 			}
