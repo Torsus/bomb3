@@ -1482,7 +1482,7 @@ void scanna_oddsen_sverige(char responseText2[])
 				Odds->last[H1][B1][H2][B2][H3][B3][0][0] = true;
 			}
 			//else if(Odds->m_en_krona_ospelad == false)
-			else if(odds2 >(Odds->m_omsattning * 0.35))
+			else if(odds2 > Odds->m_minodds && hjalpodds < Odds->m_maxnomodds)
 			{
 				if (Odds->KB[H1][B1][H2][B2][H3][B3][0][0] != NULL)
 					Odds->KB[H1][B1][H2][B2][H3][B3][0][0]->EjSpelad = true;
