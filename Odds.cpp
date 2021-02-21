@@ -164,7 +164,8 @@ void COdds::BerIns1()
 	{
 		Ins = 0.0;
 
-
+		float testodds;
+		testodds = *Oms * (*AterBet) / (*MinKvot) * (0.5 / (*MinIns));
 		if (KL[i].NOdds <= *MaxNomOdds && 
 				// Spelad --> Kolla kvotetn
 			(( !KL[i].EjSpelad && KL[i].kvot>=*MinKvot)
