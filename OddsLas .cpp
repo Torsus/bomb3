@@ -3479,7 +3479,9 @@ void scanna_oddsen_sverige_fyra(char responseText2[])
 	} while (status < 33);
 }
 
+bool kollanomodds4matcher(int mh1, int mb1, int mh2, int mb2, int mh3, int mb3, int mh4, int mb4) {
 
+}
 
 UINT LasDenyaSvenska_fyra(LPVOID param)
 {
@@ -3626,6 +3628,7 @@ UINT LasDenyaSvenska_fyra(LPVOID param)
 												int apa;
 												apa = 1;
 											}
+											kollanomodds4matcher(mh1, mb1, mh2, mb2, mh3, mb3, mh4, mb4);
 											sprintf(sUrlOrg, "https://api.spela.svenskaspel.se/draw/1/score/bet_oddslist?product=7&drawnum=%d&home1=%d,%d,%d,%d,%d&away1=%d,%d,%d,%d,%d&home2=%d,%d,%d,%d,%d&away2=%d,%d&home3=%d&away3=%d&home4=%d&away4=%d", Odds->m_matchid, mal1, mal2, mal3, mal4, mal5, mal6, mal7, mal8, mal9, mal10, mal11, mal12, mal13, mal14, mal15, mal16, mal17, mal18, mal19, mal20, mal21);
 										// https://api.spela.svenskaspel.se/draw/1/score/bet_oddslist?product=7&drawnum=13105&home1=0,1&away1=0,1,2&home2=0,1&away2=0,1&home3=10&away3=9,
 										//	sprintf(sUrlOrg, "https://api.spela.svenskaspel.se/draw/1/score/bet_oddslist?product=7&drawnum=10889&home1=0,1,2,3,4,5,6,7,8,9&away1=0,1,2,3,4&home2=0,1,2,3,4&away2=0&home3=0&away3=0");
