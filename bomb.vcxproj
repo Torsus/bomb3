@@ -180,10 +180,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bombco.application" />
+    <None Include="bombclickonce.application" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="bombco.exe.manifest" />
+    <Manifest Include="bombclickonce.exe.manifest" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
