@@ -179,13 +179,6 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Manifest Include="bombclickonce.exe.manifest" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bombclickonce.application" />
-    <None Include="sign.pfx" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
