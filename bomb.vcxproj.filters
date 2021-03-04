@@ -82,4 +82,10 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bombco.application" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="bombco.exe.manifest" />
+  </ItemGroup>
 </Project>
