@@ -83,9 +83,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bombclickonce.application" />
+    <None Include="bombdeploy.application" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="bombclickonce.exe.manifest" />
+    <Manifest Include="bombskal.vshost.exe.manifest" />
   </ItemGroup>
 </Project>
