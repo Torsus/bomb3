@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="bombdeploy.exe" version="1.0.0.0" publicKeyToken="1e5bd8099c68e714" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="bombskal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="bombskal.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Alternativ för UAC-manifest
+          Om du vill ändra nivån för Windows User Account Control ersätter du 
+          noden requestedExecutionLevel med någon av följande.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Om du vill använda virtualisering för filer och register för bakåtkompabilitet 
+         tar du bort noden requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bombskal.exe" size="4608">
+      <assemblyIdentity name="bombskal" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RG2ExsKNIQP7V55xmSYEk/Pbcx1k72VuQ6nNlMrp3os=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency xmlns="urn:schemas-microsoft-com:asm.v1">
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="bombskal.vshost.exe.manifest" asmv2:size="490">
+      <assemblyIdentity name="MyApplication.app" version="1.0.0.0" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wAhetGfS/JyfOVBH4FcYOzzRUDpAh9DbVlFhwTUnp28=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bombskal.vshost.exe" size="22696">
+      <assemblyIdentity name="vshost32" version="14.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WNRqOAHCgJCGmO9P94lUZCe5vnzXj2GnUzzC9WwbiBs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bomb.exe" size="8577536">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p5bqwyQTXmuDeiFdCDqajNI7u6/h+1y+gGm/KlKfHak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bombskal.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bombskal.pdb" size="11776">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gtlH3fc2tBTRlcLV70wNgHS2vuNlO3IRiu+9bmc4zKE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="bombskal.vshost.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-KIDO0EA\Torsus" issuerKeyHash="396b764faa9a48c25fe1c1733e0a22e76351c142" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+trKl6FyuNy9tmdzTrtZ6IIGcENSb0qR8edtMATi0XI=</DigestValue></Reference></SignedInfo><SignatureValue>b9shUaTk/4QxcsghonpNHkF6G7uIQ5mKRPtxsut6srWFHjK+og4zQrLI9PlpMz9RYC68mMJ9nYeEpB+796I0ns/16A7gSy95z7e6mDyewKoAVYLQHLtRSnb1UYP1yd6E4GIdeT/CeKY/c1IDpO4I8WvqGOvMliV11zPChjG3J1o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xgnH1+5R8TRBmFyy2LTJzOWCmEsmFrYHTjze8fOK/IuqxDKnuFpuRavbVWNOqBL/AnjfKIbr9qZUZsCCrP052wo8MmbfcdhsiOLWbdDRAUipj7aQqfOLI7XGjXdqtUdBH1oVNBJZhLkNpeensL72gflHMzbyN0fVsXsDCWuGqUk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="72d1e204306de7f1914a6f5243700682e859bb4e7367b6bddcb872a197cadafa" Description="" Url=""><as:assemblyIdentity name="bombdeploy.exe" version="1.0.0.0" publicKeyToken="1e5bd8099c68e714" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-KIDO0EA\Torsus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>AbsHURVm6CVepGhWGK+TtelPE3ioMhTl6V5K260kGbk=</DigestValue></Reference></SignedInfo><SignatureValue>Nq2ZKJyQXRsZ164EY6LWn4AL/8WnGLf/VvJS5tZURcb63+idEutPFTmKJ+PNbniDy54Qm0503Rr1ysgqCNag+5ungsG2HWcoQfEdwblyO0+TH1xKSJCJV6YyXJR5TUcvCovJubUikYYMyUStcjCgoveOhgpQw121GOUR3ZsPnSI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xgnH1+5R8TRBmFyy2LTJzOWCmEsmFrYHTjze8fOK/IuqxDKnuFpuRavbVWNOqBL/AnjfKIbr9qZUZsCCrP052wo8MmbfcdhsiOLWbdDRAUipj7aQqfOLI7XGjXdqtUdBH1oVNBJZhLkNpeensL72gflHMzbyN0fVsXsDCWuGqUk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICCjCCAXOgAwIBAgIQeOYAjuB9mLRDX3TFbW2m4jANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtAEsASQBEAE8AMABFAEEAXABUAG8AcgBzAHUAczAeFw0yMTAzMDUwOTA1MzFaFw0zOTAxMDIwMDAwMDBaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0ASwBJAEQATwAwAEUAQQBcAFQAbwByAHMAdQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGCcfX7lHxNEGYXLLYtMnM5YKYSyYWtgdOPN7x84r8i6rEMqe4Wm5Fq9tVY06oEv8CeN8ohuv2plRmwIKs/TnbCjwyZt9x2GyI4tZt0NEBSKmPtpCp84sjtcaNd2q1R0EfWhU0ElmEuQ2l56ewvvaB+UczNvI3R9WxewMJa4apSQIDAQABoxcwFTATBgNVHSUEDDAKBggrBgEFBQcDAzANBgkqhkiG9w0BAQsFAAOBgQCfatq6GaVDBXDK5cV1Ag9mN/fAsHEduJOtSHz5I2cZD4av3ZLYJ5ufw/vh/kV/UYtrCSGZn04+GcAFv6CvBlHv0/huULqnajEtDMtrguD2NNuH9aJtDTfkgZFvqTJBClHoBiQKfucCOpWLwN4AU4A6b+kw4fXcDxuEKJ7KaTgIWg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

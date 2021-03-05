@@ -86,6 +86,6 @@
     <None Include="bombdeploy.application" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="bombskal.vshost.exe.manifest" />
+    <Manifest Include="bombdeploy.exe.manifest" />
   </ItemGroup>
 </Project>
