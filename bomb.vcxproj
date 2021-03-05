@@ -181,11 +181,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bombdeploy.application" />
     <None Include="bombskal.application" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="bombdeploy.exe.manifest" />
+    <Manifest Include="bombskal.exe.manifest" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
