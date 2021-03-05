@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bombdeploy.application" />
+    <None Include="bombskal.application" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="bombdeploy.exe.manifest" />
