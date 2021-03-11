@@ -180,12 +180,6 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="bombskal.application" />
-  </ItemGroup>
-  <ItemGroup>
-    <Manifest Include="bombskal.exe.manifest" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
